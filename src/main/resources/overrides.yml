@@ -1,0 +1,29 @@
+# ========================== #
+#
+#  [!] Если перед значением string
+#  поставить "!" то проверка
+#  будет на отсутствие значения.
+#  Пример: permission: "!essentials.fly"
+#  + обязательно значение должно быть в кавычках ("")
+#
+#  overrides:
+#    <название>:
+#      enabled: true
+#      conditions:
+#        permission: <string>
+#        world: <string>
+#        name: <string>
+#        uuid: <string>
+#      message:
+#        - "&cТы не можешь быть тут!"
+#
+# ========================== #
+
+overrides:
+  join:
+    enabled: true
+    conditions:
+      name: "ServerPlohoi"
+    message:
+      - "&cТак сделай лучше"
+      - "&7если конечно можешь)"

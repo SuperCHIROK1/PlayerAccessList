@@ -1,0 +1,30 @@
+#   ____  _                        _                         _     _     _
+#  |  _ \| | __ _ _   _  ___ _ __ / \   ___ ___ ___  ___ ___| |   (_)___| |_
+#  | |_) | |/ _` | | | |/ _ \ '__/ _ \ / __/ __/ _ \/ __/ __| |   | / __| __|
+#  |  __/| | (_| | |_| |  __/ | / ___ \ (_| (_|  __/\__ \__ \ |___| \__ \ |_
+#  |_|   |_|\__,_|\__, |\___|_|/_/   \_\___\___\___||___/___/_____|_|___/\__|
+#                 |___/
+
+# Telegram: @bordyer
+# Плагин поддерживает HEX, LEGACY ЦВЕТА, а также PlaceholderAPI
+
+placeholders:
+  whitelist: "Белый список"
+  blacklist: "Черный список"
+  true: "включен"
+  false: "выключен"
+
+messages:
+  prefix: '&#68FFFF&l[&#5BFFD3&lВ&#4EFFA7&lх&#40FF7B&lо&#33FF4F&lд&#26FF23&l]&f'
+  reloaded: '{PRFX} &#76FF03&oПлагин успешно перезагружен!'
+  no-perms: '{PRFX} &cУ вас нет нужных прав'
+  added: '{PRFX} &fУспешно добавлен &#00E5FF{plr} &fв &#00E5FF{list}'
+  usage: '{PRFX} &fИспользование: &#00E5FF{command}'
+  switched-to: '{PRFX} &#00E5FF{list} &fтеперь &#00E5FF{boolean}'
+  no-such-thing: '{PRFX} &cТакого нет в списке'
+  removed: '{PRFX} &fТеперь &#00E5FF{plr} &fбольше нет в &#00E5FF{list}'
+  such-already-exists: '{PRFX} &cТакой уже есть в списке'
+  kick-log: '{PRFX} &cИгрок &f{plr} &7({ip}) &cбыл кикнут с сервера'
+  kick-log-wl: '{PRFX} &#FFD93DИгрок &f{plr} &7({ip}) &eне находится в белом списке и был кикнут'
+  kick-log-bl: '{PRFX} &#FF1744Игрок &f{plr} &7({ip}) &cнаходится в черном списке и был кикнут'
+  status: "{PRFX} Статус: &#00E5FF{boolean}"

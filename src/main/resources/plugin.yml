@@ -1,0 +1,30 @@
+name: PlayerAccessList
+version: '${project.version}'
+main: me.superchirok1.playeraccesslist.PlayerAccessList
+api-version: '1.16'
+prefix: PAL
+softdepend: [PlaceholderAPI]
+authors: [SuperCHIROK1]
+description: Whitelist/blacklist plugin
+
+commands:
+  pal:
+    usage: /pal
+  blacklist:
+    usage: /blacklist
+    aliases:
+      - bl
+  whitelist:
+    usage: /whitelist
+    aliases:
+      - wl
+
+permissions:
+  pal.admin:
+    description: Права админа
+  pal.admin.log:
+    description: Admin log
+  pal.whitelist:
+    description: Управление белым списком
+  pal.blacklist:
+    description: Управление черным списком
