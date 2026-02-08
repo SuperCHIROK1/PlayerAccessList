@@ -237,7 +237,7 @@ public final class PlayerAccessList extends JavaPlugin {
         sendConsole("                                                    ");
         sendConsole("  &fVersion: &"+ bukva + getDescription().getVersion()+ " &8| &fAuthor: &"+bukva+"SuperCHIROK1");
         sendConsole("  &fGitHub: &"+bukva+"https://github.com/SuperCHIROK1/PlayerAccessList");
-        sendConsole("  &fContributors: &"+bukva+"https://github.com/SuperCHIROK1/PlayerAccessList/CONTRIBUTORS.md");
+        sendConsole("  &fContributors: &"+bukva+"https://github.com/SuperCHIROK1/PlayerAccessList/blob/main/CONTRIBUTORS.md");
         sendConsole("                                                    ");
         if (isFirstLaunch()) {
             sendConsole("    &aDetected the first launch of PlayerAccessList!");
