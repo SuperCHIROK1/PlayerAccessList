@@ -30,7 +30,7 @@ public class LogHandler {
 
         message = EventPlaceholder.parse(message, event);
         for (Player player : plugin.getServer().getOnlinePlayers()) {
-            if (!player.hasPermission("pal_log")) continue;
+            if (!player.hasPermission("pal.log")) continue;
 
             if (type == LogConfig.MessageType.CHAT_MESSAGE) {
                 player.sendMessage(message);
