@@ -1,0 +1,70 @@
+#  █████▄ ██     ▄████▄ ▄█████ ▄█████ ██     ██ ▄█████ ██████
+#  ██▄▄█▀ ██     ██▄▄██ ██     ██     ██     ██ ▀▀▀▄▄▄   ██
+#  ██     ██████ ██  ██ ▀█████ ▀█████ ██████ ██ █████▀   ██
+#
+#  » Support: https://dsc.gg/bytepl
+#
+#  ⚠ Found a bug? Please contact support before leaving a low rating.
+#    We value your trust and will help you quickly!
+#  ❤ Like the plugin? Leave a review, it's the best motivation.
+
+# Plugin prefix in messages. (placeholders: %prefix%)
+prefix: '&#6EADFF&lPAL &8»&7'
+
+# Color code and text formatting mode.
+# All methods support HEX colors.
+#
+# Options:
+# » LEGACY (Classic: &6, &#aabbcc)
+# » LEGACY_UPDATED (Extended: &6, &#aabbcc, <#aabbcc>)
+# » MINIMESSAGE (Tags: <red>, <gradient>)
+serializer: "legacy"
+
+# Plugin localization (the corresponding file must be in the /lang/ folder)
+#
+# Available localizations:
+# » ru (Russian) [By SuperCHIROK1]
+# » en (English) [By SuperCHIROK1]
+#
+# Help us improve!
+# If you've made a high-quality translation into another language,
+# suggest it on our Discord server: https://dsc.gg/bytepl
+language: en
+
+# Player data storage settings
+database:
+  # Database type.
+  # It is recommended to change this while the server is offline.
+  #
+  # Types:
+  # sqlite - local file (recommended for small servers)
+  # mysql  - remote DB (recommended for server networks/BungeeCord)
+  type: "sqlite"
+
+  # SQLite file name/path (will be created in the plugin folder)
+  sqlite_path: 'data.db'
+
+  # MySQL connection parameters (used if type: mysql)
+  mysql:
+    host: "0.0.0.0"       # Database IP address
+    port: 3306            # MySQL port
+    username: "pal_user"  # Database username
+    password: "password"  # User password
+    database: "pal_db"    # Created database name
+
+    # Connection parameters string.
+    # (if you are not sure what this is, we recommend leaving it as is)
+    args: "?useSSL=false&autoReconnect=true&characterEncoding=utf8"
+
+    # Synchronization section for multiple servers (MySQL only)
+    polling:
+      # Should the automatic cache update be enabled?
+      # If you have multiple servers connected to the same DB,
+      # this allows them to see changes made on other servers.
+      enabled: false
+
+      # Update check interval (in seconds).
+      # Lower values mean players can join faster after being added,
+      # but the plugin will "query" the database more frequently.
+      # Recommended: 30-60 seconds.
+      delay: 60

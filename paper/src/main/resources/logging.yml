@@ -1,0 +1,27 @@
+#  █████▄ ██     ▄████▄ ▄█████ ▄█████ ██     ██ ▄█████ ██████
+#  ██▄▄█▀ ██     ██▄▄██ ██     ██     ██     ██ ▀▀▀▄▄▄   ██
+#  ██     ██████ ██  ██ ▀█████ ▀█████ ██████ ██ █████▀   ██
+#
+#  » Support: https://dsc.gg/bytepl
+#
+#  ⚠ Found a bug? Please contact support before leaving a low rating.
+#    We value your trust and will help you quickly!
+#  ❤ Like the plugin? Leave a review, it's the best motivation.
+
+moderator_log: true
+console_log: true
+
+# Type of message sent to moderators.
+# Options:
+# CHAT_MESSAGE   - Chat message
+# ACTIONBAR      - Actionbar message
+message_type: CHAT_MESSAGE
+
+# Sound played to moderators.
+# Format: 'sound_id volume pitch'
+sound: 'entity.item.pickup 1 0.2'
+
+messages:
+  whitelist: 'Player &f%player% (%ip%) &7tried to join, but they are not whitelisted.'
+  blacklist: 'Player &f%player% (%ip%) &7tried to join, but they are blacklisted.'
+  kick: 'Player &f%player% (%ip%) &7tried to join.'

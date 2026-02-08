@@ -1,0 +1,44 @@
+##
+## overrides:
+##   <name>: (can be anything, it doesn't affect functionality)
+##     enabled: <true|false> <- Enabled?
+##     conditions: <- Conditions under which the player will be kicked from the server. (usage and list below)
+##     - "list of conditions.."
+##     kick: <- Kick message
+##     - '&cYou have been kicked from the server'
+##
+
+# List of conditions and their descriptions:
+## 1. nickname: <nickname> - Checks the player's name.
+##    Example: - 'nickname: Notch' (will kick the player with this nickname)
+## 2. uuid: <id> - Checks the player's unique ID.
+##    Example: - 'uuid: 069a79f4-44e9-4726-a5be-fca90e38aaf5'
+## 3. ip: <address> - Checks the player's IP address.
+##    Example: - 'ip: 127.0.0.1'
+## 4. permission: <permission> - Checks for the presence of a permission node.
+##    Example: - 'permission: group.guest' (will kick anyone who has this permission)
+## 5. world: <world> - Checks which world the player is in.
+##    Example: - 'world: world_nether' (will kick the player if they are in the nether)
+# Using the ! operator (NEGATION):
+## If you put ! before a condition, it will trigger for those who DO NOT match the description.
+## Example: - '!permission: server.vip' (will kick all who DO NOT have vip status)
+
+# Example configuration: (all are disabled by default)
+overrides:
+  # Check by player nickname.
+  nickname_check:
+    enabled: false
+    conditions:
+      - 'nickname: BadPlayer' # Kick the player with the nickname BadPlayer
+    kick:
+      - '&cBad players are not allowed in!'
+      - '&6server.net'
+  # Check for the presence of a permission. (if they have it, let them in, otherwise kick)
+  # The "negation" operator works here.
+  permission_check:
+    enabled: false
+    conditions:
+      - '!permission: techwork.work' # Kick the player who does not have the "techwork.work" permission
+    kick:
+      - '&cServer is currently under maintenance.'
+      - '&6server.net'

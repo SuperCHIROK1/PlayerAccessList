@@ -1,0 +1,39 @@
+name: PlayerAccessList
+version: '${version}'
+main: me.superchirok1.playeraccesslist.PlayerAccessList
+api-version: '1.16'
+prefix: PAL
+depend: [PlaceholderAPI]
+authors: [SuperCHIROK1]
+description: Player access management will become easier
+website: https://github.com/SuperCHIROK1/PlayerAccessList
+
+libraries:
+  - "com.google.code.gson:gson:2.13.2"
+
+commands:
+  pal:
+    aliases:
+      - playeraccess
+      - playeraccesslist
+    usage: /pal <args>
+  whitelist:
+    aliases:
+      - wl
+      - whl
+    usage: /wl <args>
+  blacklist:
+    aliases:
+      - bl
+      - blh
+    usage: /bl <args>
+
+permissions:
+  pal_admin:
+    description: Admin permission
+  pal_whitelist:
+    description: Whitelist permission (not bypass)
+  pal_blacklist:
+    description: Whitelist permission (not bypass)
+  pal_log:
+    description: Moderator log permission

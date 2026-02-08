@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.superchirok1.playeraccesslist'
+version = '3.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
+    maven { url 'https://repo.bstats.org/content/repositories/releases/' }
+}
+
+dependencies {
+    compileOnly 'com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+    compileOnly "net.kyori:adventure-text-minimessage:4.25.0"
+    compileOnly "net.kyori:adventure-platform-bukkit:4.3.2"
+    compileOnly "net.kyori:adventure-api:4.25.0"
+    compileOnly "org.projectlombok:lombok:1.18.42"
+    //compileOnly 'mysql:mysql-connector-java:8.0.33'
+    annotationProcessor("org.projectlombok:lombok:1.18.42")
+    //compileOnly("org.spongepowered:configurate-yaml:4.1.2")
+    compileOnly 'com.google.code.gson:gson:2.13.2'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(16)
+    }
+}

@@ -1,0 +1,38 @@
+no_perms: '%prefix% &cYou do not have permission to perform this action.'
+reloaded: '%prefix% &7Configurations and services successfully reloaded. &8(&f%sms.&8)'
+usage: '%prefix% Usage: &f%s'
+admin_usage: |-
+  &r
+  &7  &#6EADFFPAL Plugin Commands:
+  &7  /pal reload &8- &fReload settings
+  &7  /pal migrate &8- &fMigrate data
+  &7  /whitelist &8- &fWhitelist management
+  &7  /blacklist &8- &fBlacklist management
+  &r
+migrate:
+  usage: |-
+    &r
+    &7  &#6EADFFMigration Commands:
+    &7  /pal migrate json <file> &f(migrate from .json file)
+    &7  /pal migrate vanilla_whitelist <list> &f(migrate from vanilla whitelist)
+    &7  /pal migrate vanilla_blacklist <list> &f(migrate from banned players list)
+    &r
+  select_list: '%prefix% You must specify a list for this migration type.\n%prefix% Usage: &f/pal migrate <from> <to> <list>'
+  successful: '%prefix% &aMigration completed successfully! &8(&f%sms.&8)'
+whitelist:
+  added: '%prefix% Player &f%s&7 has been added to the whitelist.'
+  removed: '%prefix% Player &f%s&7 has been removed from the whitelist.'
+  such_already_exists: '%prefix% &cThis player is already on the whitelist.'
+  status: '%prefix% Whitelist status: %s'
+  no_such_thing: '%prefix% &cThis player is not on the whitelist.'
+  cannot_be_added: '%prefix% &cThis player cannot be added to the whitelist.'
+blacklist:
+  added: '%prefix% Player &f%s&7 has been added to the blacklist.'
+  removed: '%prefix% Player &f%s&7 has been removed from the blacklist.'
+  such_already_exists: '%prefix% &cThis player is already blacklisted.'
+  no_such_thing: '%prefix% &cThis player is not on the blacklist.'
+  status: '%prefix% Blacklist status: %s'
+  cannot_be_added: '%prefix% &cThis player cannot be added to the blacklist.'
+placeholders:
+  true: '&aEnabled'
+  false: '&cDisabled'

@@ -1,0 +1,6 @@
+rootProject.name = 'PAL'
+include 'common'
+include 'paper-en'
+include 'paper-ru'
+include 'paper'
+

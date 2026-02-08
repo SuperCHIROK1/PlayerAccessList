@@ -1,0 +1,38 @@
+no_perms: '%prefix% &cУ вас недостаточно прав для выполнения этого действия.'
+reloaded: '%prefix% &7Конфигурации и сервисы успешно перезагружены. &8(&f%s мс.&8)'
+usage: '%prefix% Использование: &f%s'
+admin_usage: |-
+  &r
+  &7  &#6EADFFКоманды плагина PAL:
+  &7  /pal reload &8- &fПерезагрузить настройки
+  &7  /pal migrate &8- &fМиграция данных
+  &7  /whitelist &8- &fУправление вайтлистом
+  &7  /blacklist &8- &fУправление ч.с.
+  &r
+migrate:
+  usage: |-
+    &r
+    &7  &#6EADFFКоманды миграции:
+    &7  /pal migrate json <файл> &f(миграция с .json файла)
+    &7  /pal migrate vanilla_whitelist <список> &f(миграция с ванильного вайтлиста)
+    &7  /pal migrate vanilla_blacklist <список> &f(миграция с списка забаненных игроков)
+    &r
+  select_list: '%prefix% Вы должны выбрать список для данного типа миграции.\n%prefix% Использование: &f/pal migrate <откуда> <куда> <список>'
+  successful: '%prefix% &aМиграция успешно завершена! &8(&f%s мс.&8)'
+whitelist:
+  added: '%prefix% Игрок &f%s&7 успешно добавлен в вайтлист.'
+  removed: '%prefix% Игрок &f%s&7 успешно удален из вайтлиста.'
+  such_already_exists: '%prefix% &cЭтот игрок уже есть в вайтлисте.'
+  status: '%prefix% Статус вайтлиста: %s'
+  no_such_thing: '%prefix% &cЭтого игрока нет в вайтлисте.'
+  cannot_be_added: '%prefix% &cЭтот игрок не может быть добавлен в вайтлист.'
+blacklist:
+  added: '%prefix% Игрок &f%s&7 успешно добавлен в блэклист.'
+  removed: '%prefix% Игрок &f%s&7 успешно удален из блэклиста.'
+  such_already_exists: '%prefix% &cЭтот игрок уже находится в блэклисте.'
+  no_such_thing: '%prefix% &cЭтого игрока нет в блэклисте.'
+  status: '%prefix% Статус блэклиста: %s'
+  cannot_be_added: '%prefix% &cЭтот игрок не может быть добавлен в блэклист.'
+placeholders:
+  'true': '&aВключен'
+  'false': '&cВыключен'

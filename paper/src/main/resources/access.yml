@@ -1,0 +1,50 @@
+#  █████▄ ██     ▄████▄ ▄█████ ▄█████ ██     ██ ▄█████ ██████
+#  ██▄▄█▀ ██     ██▄▄██ ██     ██     ██     ██ ▀▀▀▄▄▄   ██
+#  ██     ██████ ██  ██ ▀█████ ▀█████ ██████ ██ █████▀   ██
+#
+#  » Support: https://dsc.gg/bytepl
+#
+#  ⚠ Found a bug? Please contact support before leaving a low rating.
+#    We value your trust and will help you quickly!
+#  ❤ Like the plugin? Leave a review, it's the best motivation.
+
+whitelist:
+  # Enable whitelist?
+  enabled: false
+  # Kick message shown to the player.
+  kick_message:
+    - '&cYou are not whitelisted on this server!'
+    - '&7yourserver.net'
+  # List of players who cannot be added to the whitelist.
+  cannot_be_added:
+    - TestPlayer
+    - player1234
+
+blacklist:
+  # Enable blacklist?
+  enabled: false
+  # Kick message shown to the player.
+  kick_message:
+    - '&cYou are blacklisted from this server!'
+    - '&7yourserver.net'
+  # List of players who cannot be added to the blacklist.
+  cannot_be_added:
+    - TestPlayer
+    - player1234
+
+overrides:
+  # Enable overrides system?
+  enabled: true
+  # Override files. Must be located in the plugin folder.
+  # You can add your own files here.
+  files:
+    - 'overrides/overrides.yml'
+
+nickname_check:
+  # Enable nickname validation?
+  enabled: true
+  # Kick message if the player's name doesn't match the standards.
+  kick_message:
+    - '&cYour nickname does not meet the server standards!'
+  # Regex pattern for nickname validation.
+  regex: '^[a-zA-Z0-9_]{3,16}$'
