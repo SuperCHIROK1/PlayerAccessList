@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://google.com"><b>EN</b></a>
+  <a href="https://github.com/SuperCHIROK1/PlayerAccessList/blob/main/README.md"><b>EN</b></a>
 </p>
 
 # 🛡️ PlayerAccessList (PAL)
