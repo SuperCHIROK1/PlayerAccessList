@@ -29,11 +29,11 @@ commands:
     usage: /bl <args>
 
 permissions:
-  pal_admin:
+  pal.admin:
     description: Admin permission
-  pal_whitelist:
+  pal.whitelist:
     description: Whitelist permission (not bypass)
-  pal_blacklist:
+  pal.blacklist:
     description: Whitelist permission (not bypass)
-  pal_log:
+  pal.log:
     description: Moderator log permission
